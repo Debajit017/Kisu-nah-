@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What do you want to know?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('kisu_nah.gif'); /* Updated background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 20%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function showGoodMessage() {
+            const newWindow = window.open("", "GoodMessage", "width=600,height=400");
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>Good Sides</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                            padding: 20px;
+                            background-image: url('good.jpg'); /* Background for good message */
+                            background-size: cover;
+                            background-position: center;
+                            color: #fff;
+                        }
+                        .message {
+                            background: rgba(255, 255, 255, 0.7); /* Low opacity white background */
+                            color: #000; /* Black text */
+                            padding: 20px;
+                            border-radius: 10px;
+                            display: inline-block;
+                            font-weight: bold; /* Make the text bold */
+                            max-width: 80%;
+                            margin: auto;
+                            font-size: 20px; /* Font size set for good message */
+                        }
+                        .message p {
+                            margin: 0; /* Remove extra margin */
+                            padding: 15px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h2>Your Good Sides</h2>
+                    <div class="message">
+                        <p>You are one of the most selfless people who talks to me and asks about my day. *-*
+                        <br><br>As I am not that much of an emotionally expressive guy, most of the time
+                        I don't always come up with a perfect response, naile jeigula boli ao fao maximum e tai chup thaka lage @-@ 
+                        <br><br>Thanks for always being there, though it sounds a bit formal. Ki likhbo bujhtesi nah vai, thanks bolle formal -,- 
+                        <br><br>Wishing you a happy new year. Always going to cherish this note as long as I can. :")</p>
+                    </div>
+                </body>
+                </html>
+            `);
+            newWindow.document.close();
+        }
+
+        function showBadMessage() {
+            const newWindow = window.open("", "BadMessage", "width=600,height=400");
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>Bad Sides</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                            padding: 20px;
+                            background-image: url('bad.jpg'); /* Background for bad message */
+                            background-size: cover;
+                            background-position: center;
+                            color: #fff;
+                        }
+                        .message {
+                            background: rgba(255, 255, 255, 0.7); /* Low opacity white background */
+                            color: #000; /* Black text */
+                            padding: 20px;
+                            border-radius: 10px;
+                            display: inline-block;
+                            font-weight: bold; /* Make the text bold */
+                            max-width: 80%;
+                            margin: auto;
+                            font-size: 20px; /* Font size set for bad message */
+                        }
+                        .message p {
+                            margin: 0; /* Remove extra margin */
+                            padding: 15px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h2>pro vondo shissho</h2>
+                    <div class="message">
+                        <p>Amare notification on korai nije jao ga abr -,-. 
+                        <br><br>Vondami bad dao, biyer dawat dao.</p>
+                    </div>
+                </body>
+                </html>
+            `);
+            newWindow.document.close();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Emnei *-*</h1>
+        <h6>( Coding pari nah :'] )</h6>
+        <button onclick="showGoodMessage()">Hmmmm</button>
+        <button onclick="showBadMessage()"> *-*</button>
+    </div>
+</body>
+</html>
